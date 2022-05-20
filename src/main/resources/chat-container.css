@@ -1,0 +1,69 @@
+.send-container {
+    -fx-background-color: #00b3be;
+    -fx-alignment: center;
+}
+
+.send-container .mfx-ripple-generator {
+    -mfx-animation-speed: 3;
+    -mfx-auto-clip: true;
+}
+
+.upload-container {
+    -fx-background-radius: 0 6 6 0;
+    -fx-background-color: #141414;
+    -fx-alignment: center;
+}
+
+.upload-container .mfx-ripple-generator {
+    -mfx-animation-speed: 3;
+    -mfx-auto-clip: true;
+}
+
+.upload-icon {
+    -fx-fill: rgba(255, 255, 255, 0.95);
+}
+
+.message-field {
+    -fx-background-color: #141414;
+    -fx-text-fill: rgba(255, 255, 255, 0.95);
+    -fx-background-radius: 6 0 0 6;
+    -fx-highlight-fill: #c8c8c8;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+    -fx-font-size: 14;
+    -fx-padding: 14;
+}
+
+
+/***********************************
+ ************ list view ************
+ ***********************************/
+
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+}
+
+.message-container {
+    -fx-padding: 10;
+    -fx-background-color: #141414;
+    -fx-background-radius: 0 10 10 10;
+}
+
+/*noinspection CssInvalidPseudoSelector*/
+.message-container:sender {
+    -fx-background-color: #00b3be;
+}
+
+/*noinspection CssInvalidPseudoSelector*/
+.message-container:image {
+    -fx-background-color: transparent;
+}
+
+/*noinspection CssInvalidPseudoSelector*/
+Text:hyperlink {
+    -fx-underline: true;
+}

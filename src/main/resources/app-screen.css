@@ -1,0 +1,182 @@
+.tool-bar {
+    -fx-background-color: transparent;
+}
+
+.mfx-text-field, .text-field, .label {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: rgba(255, 255, 255, 0.95);
+}
+
+/**********************************************
+****************** menu item ******************
+***********************************************/
+
+.r-menu-item {
+    -fx-text-fill: rgba(255, 255, 255, 0.95);
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-background-color: transparent;
+    -fx-min-height: 35;
+    -fx-font-size: 12;
+    -fx-min-width: 50;
+    -fx-padding: 10;
+}
+
+.r-menu-item:hover {
+    -fx-background-color: #4b4b4b;
+}
+
+.r-menu-item .text-field {
+    -fx-background-color: transparent;
+}
+
+.r-menu-item .mfx-ripple-generator {
+    -mfx-auto-clip: true;
+}
+
+
+/**********************************************
+****************** list view ******************
+***********************************************/
+
+
+.active-users-title {
+    -fx-font-size: 18;
+    -fx-padding: 15;
+}
+
+.r-list-view {
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    /*-fx-pref-width: 220;*/
+    -fx-padding: 4;
+}
+
+.r-list-view .virtual-flow {
+    -fx-background-color: transparent;
+}
+
+.r-list-view .virtual-flow .mfx-list-cell {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+
+.r-list-view .virtual-flow .mfx-list-cell .data-label {
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: white;
+    -fx-font-size: 12;
+}
+
+.r-list-view .virtual-flow .mfx-list-cell:hover {
+    -fx-background-color: #4b4b4b;
+}
+
+.r-list-view .virtual-flow .mfx-list-cell .mfx-ripple-generator {
+    -mfx-paused: true;
+    /*-mfx-ripple-color: rgba(255, 255, 255, 0.3);*/
+    /*-mfx-animation-speed: 0.7;*/
+    /*-mfx-auto-clip: true;*/
+}
+
+
+/**********************************************
+****************** list icon ******************
+***********************************************/
+
+#online {
+    -fx-fill: #129b12;
+}
+
+#offline {
+    -fx-fill: #e35921;
+}
+
+/**********************************************
+***************** scroll bars *****************
+***********************************************/
+
+.scroll-bar,
+.scroll-bar .decrement-arrow,
+.scroll-bar .increment-arrow {
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:horizontal .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 0.0 10.0 0.0;
+}
+
+.scroll-bar:vertical .increment-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0.0em;
+    -fx-padding: 0.0 10.0 0.0 0.0;
+
+}
+
+.scroll-bar .increment-arrow,
+.scroll-bar .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0.15em 0.0;
+}
+
+.scroll-bar:horizontal .increment-arrow,
+.scroll-bar:horizontal .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0.0 0.05em;
+}
+
+.scroll-bar:vertical .increment-arrow,
+.scroll-bar:vertical .decrement-arrow {
+    -fx-shape: " ";
+    -fx-padding: 0.0 0.05em;
+}
+
+.scroll-bar:horizontal .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar .decrement-arrow,
+.scroll-bar .increment-arrow {
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+    -fx-pref-width: 12;
+    -fx-pref-height: 12;
+    -fx-padding: 5 0.5 5 0.5;
+}
+
+.scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-pref-width: 12;
+    -fx-pref-height: 12;
+    -fx-padding: 0.5 5 0.5 5;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-background-insets: 2.0, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+}
+
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.6);
+    -fx-background-insets: 1.5, 0.0, 0.0;
+    -fx-background-radius: 2.0em;
+}

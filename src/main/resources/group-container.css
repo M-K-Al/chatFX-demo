@@ -1,0 +1,15 @@
+.label {
+    -fx-font-family: "Segoe UI Semibold";
+}
+
+.group-title {
+    -fx-font-size: 24;
+}
+
+.glyph-icon {
+    -fx-fill: white;
+}
+
+.secure-icon .glyph-icon {
+    -fx-fill: limegreen;
+}
